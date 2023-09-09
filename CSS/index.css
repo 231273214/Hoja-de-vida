@@ -3,46 +3,83 @@
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    font-family: 'Lora', serif;
 }
 
 .cabecera{
-    background-color: #333;
+    border: 1px solid black;
+    background: #0f0f0f;
+    padding: 20px;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    font-family: 'Lora', serif;
 }
 
 h1 {
-    margin: 0;
+    margin: 1px;
 }
-.imagen_perfil{
-margin-right: 20px;
-}
-.imagen_perfil2 {
-    flex: ;
-    margin-right: 10px; 
+.flex-container{
+    border: 1px solid black;
+    background: #f1f1f1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; 
+    display: grid;
+    grid-template-areas:
+    'cj1 . cj2'
+    'cj1 . cj3' ;
 }
 
-section {
+.caja{
+    border: 1px solid rgb(70, 69, 69);
     background-color: white;
-    margin: 20px;
-    padding: 20px;
+    color: black;
+    font-family: 'Lora', serif;
+    font-weight: bold;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
+    margin: 20px;
+}
+.caja1{
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Lora', serif;
+    text-align: center;
+    background-color: bisque;
+    grid-area: cj1;
+}
+.caja2{
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Lora', serif;
+    grid-area: cj2;
+}
+.caja3{
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-family: 'Lora', serif;
+    grid-area: cj3;
+}
+.footer{
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align-last: center;
 }
 
-
-#informacion-personal {
+.imagen_perfil{
+    margin-right: 20px;
+}
+#caja {
     font-size: 18px;
 }
 
-#experiencia-laboral li {
+#caja li {
     margin-bottom: 20px;
 }
 
-#experiencia-laboral h3 {
+#caja h3 {
     margin: 0;
     color: #333;
 }
